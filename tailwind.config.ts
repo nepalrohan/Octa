@@ -12,9 +12,14 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+			customdark:'#121212',
+			 
+				
+			 
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
+				
   			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',

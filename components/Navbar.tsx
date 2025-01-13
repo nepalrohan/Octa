@@ -7,7 +7,7 @@ import Menu from "./Menu";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between  px-8 py-4 ">
+    <div className="flex bg-white dark:bg-customdark items-center justify-between  px-8 py-4 shadow-sm shadow-slate-400 dark:shadow-gray-300 sticky top-0 left-0 z-50">
       <div className='flex items-center'>
 <h1 className='text-4xl font-extrabold text-black dark:text-gray-200'>Octa</h1>
 
