@@ -1,8 +1,9 @@
+
 import React from 'react'
 
 const HeroSection = () => {
   return (
-<div className='relative '>
+<div className='relative  '>
         <div className='absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 blur-2xl opacity-50 -z-10'>
 
         </div>
