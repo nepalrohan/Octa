@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import {
   Card,
@@ -10,6 +11,8 @@ import {
 import Image from 'next/image';
 import neckband from "@/public/headphone.jpg"
 import { ArrowUpRight, StarIcon } from 'lucide-react';
+import {useRouter} from "next/router"
+
 
 const imageStyle = {
     borderRadius: '3%',
@@ -17,8 +20,10 @@ const imageStyle = {
    
   }
 const ProductCard = () => {
+
+  const router = useRouter();
   return (
-    <Card className="w-[200px] relative  dark:bg-white border-none outline-none shadow-md shadow-slate-700   ">
+    <Card className="w-[200px] relative  dark:bg-white border-none outline-none shadow-sm shadow-slate-700   ">
    
     <CardContent className='flex flex-col  p-1 '>
    <div className='flex   items-center justify-center rounded-lg relative overflow-hidden'>
@@ -41,7 +46,7 @@ const ProductCard = () => {
 
     </div>
     </CardContent>
-    <ArrowUpRight className='ml-2 h-7 w-7 text-xl right-0 cursor-pointer text-customdark bg-white rounded-full shadow-lg z-10  hover:shadow-customdark top-0 absolute' />
+    <ArrowUpRight className='ml-2 h-7 w-7 text-xl right-0 cursor-pointer text-customdark bg-white rounded-full shadow-lg z-10  hover:shadow-customdark top-0 absolute' onClick={()=>router.push('/products/abc')} />
   </Card>
   )
 }
