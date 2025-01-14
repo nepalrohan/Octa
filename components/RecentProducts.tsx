@@ -1,34 +1,32 @@
-import ProductCard from "./ProductCard";
+import React from 'react'
+import ProductCard from './ProductCard'
 
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+  } from "@/components/ui/carousel"
+  
+  
 
-
-
-
-
-
-const MostPopular = ()=>{
-
-    return (
-      <div className='mt-4 px-8'>
+const RecentProducts = () => {
+  return (
+    <div className='mt-4 px-8'>
         <div className='  flex flex-col mx-auto items-center mb-8'>
      
 <div className='relative w-fit'>
 <div className='absolute  inset-0 bg-gradient-to-r  from-blue-500 to-purple-600 blur-2xl opacity-35 -z-10'>
 
 </div>
-<h1 className='font-extrabold text-3xl text-slate-800   dark:text-gray-200'>Most Popular Products</h1>
+<h1 className='font-extrabold text-3xl text-slate-800   dark:text-gray-200'>Recently Added Products</h1>
 
 </div>
-  <p className='text-gray-500 dark:text-gray-300'>Top Picks Loved by Everyone!</p>
+  <p className='text-gray-500 dark:text-gray-300'>Check out the latest additions to our collection—fresh products just for you!</p>
 </div>
-        <div className=' md:p-12'>
+
+<div className=' md:p-12'>
 
         <Carousel
     
@@ -70,10 +68,11 @@ const MostPopular = ()=>{
 
 
             </div>
-            </div>
-    )
+</div>
+
+  )
 }
 
 
 
-export default MostPopular;
+export default RecentProducts
