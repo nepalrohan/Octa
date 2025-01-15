@@ -11,7 +11,7 @@ import {
 import Image from 'next/image';
 import neckband from "@/public/headphone.jpg"
 import { ArrowUpRight, StarIcon } from 'lucide-react';
-import {useRouter} from "next/router"
+import {useRouter} from "next/navigation"
 
 
 const imageStyle = {
@@ -21,7 +21,7 @@ const imageStyle = {
   }
 const ProductCard = () => {
 
-  const router = useRouter();
+  const router = useRouter()
   return (
     <Card className="w-[200px] relative  dark:bg-white border-none outline-none shadow-sm shadow-slate-700   ">
    
@@ -46,7 +46,7 @@ const ProductCard = () => {
 
     </div>
     </CardContent>
-    <ArrowUpRight className='ml-2 h-7 w-7 text-xl right-0 cursor-pointer text-customdark bg-white rounded-full shadow-lg z-10  hover:shadow-customdark top-0 absolute' onClick={()=>router.push('/products/abc')} />
+    <ArrowUpRight className='ml-2 h-7 w-7 text-xl right-0 cursor-pointer text-customdark bg-white rounded-full shadow-lg z-10  hover:shadow-customdark top-0 absolute' onClick={()=>(router.push('/products/abc'))} />
   </Card>
   )
 }

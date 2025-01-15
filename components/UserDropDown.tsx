@@ -1,13 +1,11 @@
 "use client"
 import React from 'react'
 
-import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
  
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
@@ -15,13 +13,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 
 
-type Checked = DropdownMenuCheckboxItemProps["checked"]
 
 const UserDropDown = () => {
 
-    const [showStatusBar, setShowStatusBar] = React.useState<Checked>(true)
-    const [showActivityBar, setShowActivityBar] = React.useState<Checked>(false)
-    const [showPanel, setShowPanel] = React.useState<Checked>(false)
+   
   return (
     <DropdownMenu>
     <DropdownMenuTrigger asChild>
@@ -30,27 +25,23 @@ const UserDropDown = () => {
   <AvatarFallback className='font-bold '>CN</AvatarFallback>
 </Avatar>
     </DropdownMenuTrigger>
-    <DropdownMenuContent className="w-56">
-      <DropdownMenuLabel>Appearance</DropdownMenuLabel>
+    <DropdownMenuContent className="w-56 z-50 gap-4 bg-customdark text-white rounded-xl">
+     
       <DropdownMenuSeparator />
       <DropdownMenuCheckboxItem
-        checked={showStatusBar}
-        onCheckedChange={setShowStatusBar}
+     className=' font-bold  rounded-xl cursor-pointer hover:bg-gray-400 hover:shadow-md hover:text-customdark '
       >
-        Status Bar
+        Profile
       </DropdownMenuCheckboxItem>
       <DropdownMenuCheckboxItem
-        checked={showActivityBar}
-        onCheckedChange={setShowActivityBar}
-        disabled
+        className='font-bold rounded-xl cursor-pointer hover:bg-gray-400 hover:shadow-md hover:text-customdark ' 
       >
-        Activity Bar
+        Dashboard
       </DropdownMenuCheckboxItem>
       <DropdownMenuCheckboxItem
-        checked={showPanel}
-        onCheckedChange={setShowPanel}
+         className='font-bold rounded-xl cursor-pointer hover:bg-gray-400 hover:shadow-md hover:text-customdark ' 
       >
-        Panel
+        Login
       </DropdownMenuCheckboxItem>
     </DropdownMenuContent>
   </DropdownMenu>
