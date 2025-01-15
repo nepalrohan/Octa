@@ -29,17 +29,18 @@ const UserDropDown = () => {
      
       <DropdownMenuSeparator />
       <DropdownMenuCheckboxItem
-     className=' font-bold  rounded-xl cursor-pointer hover:bg-gray-400 hover:shadow-md hover:text-customdark '
+     className=' font-bold  rounded-xl cursor-pointer hover:bg-gray-400  hover:text-customdark '
       >
         Profile
       </DropdownMenuCheckboxItem>
+    
       <DropdownMenuCheckboxItem
-        className='font-bold rounded-xl cursor-pointer hover:bg-gray-400 hover:shadow-md hover:text-customdark ' 
+     className=' font-bold  rounded-xl cursor-pointer hover:bg-gray-400  hover:text-customdark '
       >
         Dashboard
       </DropdownMenuCheckboxItem>
       <DropdownMenuCheckboxItem
-         className='font-bold rounded-xl cursor-pointer hover:bg-gray-400 hover:shadow-md hover:text-customdark ' 
+         className='font-bold rounded-xl cursor-pointer hover:bg-gray-400  hover:text-customdark ' 
       >
         Login
       </DropdownMenuCheckboxItem>

@@ -1,7 +1,6 @@
 
 import React from 'react'
 import HeroSection from './HeroSection';
-import { Button } from './ui/button'
 import { ArrowUpRight } from 'lucide-react';
 import Link from "next/link"
 const HomePage = () => {

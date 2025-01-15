@@ -1,11 +1,12 @@
 "use client"
 import { Badge } from "@/components/ui/badge"
-
+import {useState} from "react";
 import React from 'react'
 import { ShoppingCart } from 'lucide-react'
 
 const CartDropDown = () => {
 
+  const [isopen, setisopen] = useState(false);
 
 
   return (
