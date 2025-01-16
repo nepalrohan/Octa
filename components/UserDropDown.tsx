@@ -4,12 +4,11 @@ import React from 'react'
  
 import {
   DropdownMenu,
-  DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from './ui/button'
 
 
 
@@ -25,25 +24,25 @@ const UserDropDown = () => {
   <AvatarFallback className='font-bold '>CN</AvatarFallback>
 </Avatar>
     </DropdownMenuTrigger>
-    <DropdownMenuContent className="w-56 z-50 gap-4 bg-customdark text-white rounded-xl">
+    <DropdownMenuContent className="w-56 z-50 gap-2 flex flex-col  bg-customdark text-white rounded-xl">
      
-      <DropdownMenuSeparator />
-      <DropdownMenuCheckboxItem
-     className=' font-bold  rounded-xl cursor-pointer hover:bg-gray-400  hover:text-customdark '
+      
+      <Button
+     className=' font-bold  rounded-xl cursor-pointer hover:bg-gray-300  hover:text-customdark '
       >
         Profile
-      </DropdownMenuCheckboxItem>
+      </Button>
     
-      <DropdownMenuCheckboxItem
+      <Button
      className=' font-bold  rounded-xl cursor-pointer hover:bg-gray-400  hover:text-customdark '
       >
         Dashboard
-      </DropdownMenuCheckboxItem>
-      <DropdownMenuCheckboxItem
+      </Button>
+      <Button
          className='font-bold rounded-xl cursor-pointer hover:bg-gray-400  hover:text-customdark ' 
       >
-        Login
-      </DropdownMenuCheckboxItem>
+        Logout
+      </Button>
     </DropdownMenuContent>
   </DropdownMenu>
   )

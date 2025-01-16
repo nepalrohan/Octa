@@ -7,9 +7,17 @@ const page = ()=>{
 
 
     return (
+<section className='flex flex-grow overflow-hidden h-screen'>
 
-        <div className='grid grid-cols-12 p-10  '>
-<div className='col-span-2  flex flex-col gap-2 bg-gray-200 dark:bg-gray-200'>
+
+
+        <div className='grid grid-cols-12 p-10 overflow-hidden h-screen '>
+
+<div className='col-span-6 '>
+    <div className="grid grid-cols-12 ">
+<div className='col-span-5  flex flex-col gap-2 bg-gray-200 dark:bg-gray-200'>
+
+
 <div className='flex items-center justify-center mt-1'>
 <Image 
 
@@ -32,7 +40,7 @@ alt="Product image"
 
 
 </div>
-<div className='col-span-4 p-4 bg-gray-200  flex flex-col gap-2'>
+<div className='col-span-7 p-4 bg-gray-200  flex flex-col gap-2'>
 <div className='flex flex-col gap-1'>
     <h1 className='text-lg font-bold dark:text-customdark'>Red Headphone V5 EGIT model 2024 with smooth padding</h1>
     <p className='text-sm font-extralight dark:text-customdark'>
@@ -55,9 +63,12 @@ alt="Product image"
         <Button  className='rounded-full px-9 py-3 shadow-md  outline border-customdark  text-customdark ' >Add to cart </Button>
         <Button className='rounded-full bg-customdark text-gray-200 shadow-md px-9 py-3 hover:bg-customdark '>Buy now </Button>
         </div>
+        </div>
 </div>
-<div className='col-span-6 '>
-<div className='h-[70vh]  p-2 grid grid-cols-3 gap-3 overflow-y-auto'>
+
+</div>
+<div className='col-span-6 h-full overflow-y-auto'>
+<div className='h-full  p-2 grid md:grid-cols-2 lg:grid-cols-3 gap-3 overflow-y-auto'>
 
 {Array.from({length:8}).map((_, index:number)=>(
 
@@ -68,6 +79,7 @@ alt="Product image"
 </div>
     </div>
         </div>
+        </section>
     )
 }
 

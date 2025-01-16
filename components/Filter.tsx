@@ -12,7 +12,9 @@ const Filter = () =>{
     return (
 
 
-        <div className=' hidden sm:flex w-full min-h-screen sticky left-0 top-0 flex flex-col items-center justify-center gap-10 bg-gray-100 dark:bg-customdark dark:border-r-2 dark:border-gray-500'>
+
+
+        <div className=' hidden sm:flex w-full h-full overflow-hidden sticky left-0 top-0   flex-col items-center justify-center gap-10 bg-gray-100 dark:bg-customdark dark:border-r-2 dark:border-gray-500'>
 
 <div className='flex flex-col gap-2'>
 <h1 className='font-extrabold text-sm text-customdark text-center dark:text-gray-200 border-b-2 border-gray-500'>Filter By Category</h1>

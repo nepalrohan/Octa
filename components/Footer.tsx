@@ -4,11 +4,11 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-    <div className='relative mt-4 marker:'>
+    <div className='relative mt-4  '>
 <div className='absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 blur-2xl opacity-40 -z-10'>
 
 </div>
-<div className='flex justify-between items-center px-12 mb-2'>
+<div className='flex justify-between py-8 items-center px-12 mb-2'>
 <div className='flex flex-col gap-3'>
 <h1 className='text-sm font-extrabold text-gray-600 dark:text-gray-400  underline'>Quick Links</h1>
 <div className='flex flex-col gap-1 text-gray-600 dark:text-gray-400 text-sm font-medium'>
