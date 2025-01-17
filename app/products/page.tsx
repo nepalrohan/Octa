@@ -4,12 +4,13 @@ const page =()=>{
 
 
     return (
-        <section className='flex flex-grow  overflow-hidden'>
+        <section className='flex  flex-grow  overflow-hidden'>
         <div className='grid grid-cols-12 h-full overflow-hidden' >
 <div className=' col-span-1 md:col-span-2  h-full overflow-hidden'>
 
     <Filter/>
     </div>
+
 
 
     <div className='  col-span-11 md:col-span-10 overflow-y-auto max-h-screen w-full'>
@@ -20,8 +21,11 @@ const page =()=>{
 
 ))}
     </div>
+    <h1 className='text-xs tont-extralight mt-4  mb-2 text-gray-400 text-center opacity-60'>You have reached the end.</h1>
+
         </div>
             </div>
+
             </section>
     )
 }

@@ -23,7 +23,8 @@ const ProductCard = () => {
 
   const router = useRouter()
   return (
-    <Card className=" w-[160px] md:w-[200px] relative  dark:bg-white border-none outline-none shadow-sm shadow-slate-700   ">
+    
+    <Card className=" w-[150px] md:w-[200px] relative  dark:bg-white border-none outline-none shadow-sm shadow-slate-700   ">
    
     <CardContent className='flex flex-col  p-1 '>
    <div className='flex   items-center justify-center rounded-lg relative overflow-hidden'>
@@ -48,6 +49,7 @@ const ProductCard = () => {
     </CardContent>
     <ArrowUpRight className='ml-2 h-7 w-7 text-xl right-0 cursor-pointer text-customdark bg-white rounded-full shadow-lg z-10  hover:shadow-customdark top-0 absolute' onClick={()=>(router.push('/products/abc'))} />
   </Card>
+  
   )
 }
 

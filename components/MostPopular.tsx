@@ -20,7 +20,7 @@ const MostPopular = ()=>{
     Autoplay({ delay: 1500, stopOnInteraction: true })
   )
     return (
-      <div className='mt-8 mb-8 md:px-8'>
+      <div className='mt-8 mb-8 md:px-8 '>
         <div className='  flex flex-col mx-auto items-center mb-8'>
      
 <div className='relative w-fit'>
@@ -36,7 +36,6 @@ const MostPopular = ()=>{
 
         <Carousel
          plugins={[plugin.current]}
-         className="w-full max-w-xs"
          onMouseEnter={plugin.current.stop}
          onMouseLeave={plugin.current.reset}
     
@@ -67,7 +66,7 @@ const MostPopular = ()=>{
   </div>
 
   {/* Next Button */}
-  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2">
+  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 ">
     <CarouselNext />
   </div>
 

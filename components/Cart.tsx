@@ -6,7 +6,7 @@ import {MdDelete} from "react-icons/md"
 export function Cart({isopen, setisopen}:{isopen:boolean, setisopen:(x:boolean)=>boolean}) {
   
 return  (
-<div   className={`max-h-screen h-screen w-80 bg-customdark dark:shadow-lg dark:shadow-gray-100 z-50 right-0 top-0 absolute p-4  flex flex-col  gap-5 shadow-md  transform transition-transform duration-300 ${
+<div   className={`max-h-screen h-screen w-80 bg-customdark dark:shadow-lg dark:shadow-gray-100 z-50 right-0 fixed  top-0 absolute p-4  flex flex-col  gap-5 shadow-md  transform transition-transform duration-300 ${
     isopen ? 'translate-x-0' : ' hidden '
   }`}>
 
@@ -20,31 +20,14 @@ return  (
 <CartCard/>
 <CartCard/>
 <CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
-<CartCard/>
+
+
 <CartCard/>
 </div>
 
 
 
-<div className='right-0 sticky z-50 rounded-xl mt-1 bg-gray-100  bottom-0 flex items-start p-2 flex-col gap-2'>
+<div className='left-0  sticky z-50 rounded-xl mt-1 bg-gray-100  bottom-0 flex items-start p-2 flex-col gap-2'>
 <h1 className='font-bold text-sm dark:text-customdark'>Total Cart Amount: Rs.4509</h1>
 <Button className='px-8 bg-customdark hover:bg-customdark rounded-xl text-gray-200 text-lg font-bold'>Checkout</Button>
 </div>
