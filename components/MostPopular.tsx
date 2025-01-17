@@ -1,5 +1,7 @@
+"use client"
+import React from 'react';
 import ProductCard from "./ProductCard";
-
+import Autoplay from "embla-carousel-autoplay"
 import {
   Carousel,
   CarouselContent,
@@ -14,9 +16,11 @@ import {
 
 
 const MostPopular = ()=>{
-
+  const plugin = React.useRef(
+    Autoplay({ delay: 1500, stopOnInteraction: true })
+  )
     return (
-      <div className='mt-4 px-8'>
+      <div className='mt-8 mb-8 md:px-8'>
         <div className='  flex flex-col mx-auto items-center mb-8'>
      
 <div className='relative w-fit'>
@@ -31,6 +35,10 @@ const MostPopular = ()=>{
         <div className=' md:p-12'>
 
         <Carousel
+         plugins={[plugin.current]}
+         className="w-full max-w-xs"
+         onMouseEnter={plugin.current.stop}
+         onMouseLeave={plugin.current.reset}
     
       className="w-full max-w-7xl relative px-2 "
     >
@@ -52,16 +60,16 @@ const MostPopular = ()=>{
       </CarouselContent>
 
        {/* Previous Button */}
-  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 ">
+  
+         {/* Previous Button */}
+         <div className=" hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 ">
     <CarouselPrevious />
   </div>
 
   {/* Next Button */}
-  <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2">
     <CarouselNext />
   </div>
- <CarouselPrevious />
-      <CarouselNext />
 
 </Carousel>
 

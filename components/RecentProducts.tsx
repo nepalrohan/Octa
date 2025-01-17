@@ -1,5 +1,7 @@
+"use client"
 import React from 'react'
 import ProductCard from './ProductCard'
+import Autoplay from "embla-carousel-autoplay"
 
 import {
     Carousel,
@@ -12,8 +14,12 @@ import {
   
 
 const RecentProducts = () => {
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 1500, stopOnInteraction: true })
+  )
   return (
-    <div className='mt-4 px-8'>
+    <div className='mt-8 mb-8   md:px-8'>
         <div className='  flex flex-col mx-auto items-center mb-8'>
      
 <div className='relative w-fit'>
@@ -23,12 +29,16 @@ const RecentProducts = () => {
 <h1 className='font-extrabold text-3xl text-slate-800   dark:text-gray-200'>Recently Added Products</h1>
 
 </div>
-  <p className='text-gray-500 dark:text-gray-300'>Check out the latest additions to our collection—fresh products just for you!</p>
+  <p className='text-gray-500 dark:text-gray-300 text-center '>Check out the latest additions to our collection—fresh products just for you!</p>
 </div>
 
 <div className=' md:p-12'>
 
         <Carousel
+          plugins={[plugin.current]}
+          className="w-full max-w-xs"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
     
       className="w-full max-w-7xl relative px-2 "
     >
@@ -50,16 +60,14 @@ const RecentProducts = () => {
       </CarouselContent>
 
        {/* Previous Button */}
-  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 ">
+       <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 ">
     <CarouselPrevious />
   </div>
 
   {/* Next Button */}
-  <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+  <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2">
     <CarouselNext />
   </div>
- <CarouselPrevious />
-      <CarouselNext />
 
 </Carousel>
 

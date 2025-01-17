@@ -8,7 +8,8 @@ const Footer = () => {
 <div className='absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 blur-2xl opacity-40 -z-10'>
 
 </div>
-<div className='flex justify-between py-8 items-center px-12 mb-2'>
+<div className='flex flex-col md:flex-row '>
+<div className='flex flex-row justify-between py-8 items-center px-12 mb-2'>
 <div className='flex flex-col gap-3'>
 <h1 className='text-sm font-extrabold text-gray-600 dark:text-gray-400  underline'>Quick Links</h1>
 <div className='flex flex-col gap-1 text-gray-600 dark:text-gray-400 text-sm font-medium'>
@@ -19,15 +20,15 @@ const Footer = () => {
 
      </div>
 
-
 <div>
 <h1 className="text-gray-600 dark:text-gray-400 text-sm font-medium">
+
   © 2024 Octa
 </h1>
       </div>
 
-
-<div className='flex flex-col gap-2'>  
+</div>
+<div className='flex flex-col items-center   gap-2'>  
 
 <h1 className='text-gray-600 dark:text-gray-400 text-sm font-medium'><span className='font-bold text-gray-700 dark:text-gray-300'>Contact:</span>071485167</h1>
 <h1 className='text-gray-600 dark:text-gray-400 text-sm font-medium'><span className='font-bold text-gray-700 dark:text-gray-300'>Email:</span>octa.enquiry@gmail.com</h1>

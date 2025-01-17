@@ -10,7 +10,7 @@ const HeroSection = () => {
 
     <div className=' container text-center mx-auto relative '>
     <h1 className='text-4xl  font-bold '>Unleash the Future: Sound, Style & Innovation</h1>
-    <p className='mt-4 text-lg font-semibold text-slate-800 dark:text-gray-300'>Experience the perfect blend of sound, style, and technology with gadgets designed to enhance your every moment</p>
+    <p className='mt-4 text-lg font-semibold text-slate-800  dark:text-gray-300'>Experience the perfect blend of sound, style, and technology with gadgets designed to enhance your every moment</p>
 </div>
 
     </div>
