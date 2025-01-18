@@ -6,8 +6,8 @@ import {MdDelete} from "react-icons/md"
 export function Cart({isopen, setisopen}:{isopen:boolean, setisopen:(x:boolean)=>boolean}) {
   
 return  (
-<div   className={`max-h-screen h-screen w-80 bg-customdark dark:shadow-lg dark:shadow-gray-100 z-50 right-0 fixed  top-0 absolute p-4  flex flex-col  gap-5 shadow-md  transform transition-transform duration-300 ${
-    isopen ? 'translate-x-0' : ' hidden '
+<div   className={`max-h-screen h-screen w-80 bg-customdark  z-50 right-0   top-0 fixed p-4  flex flex-col  gap-5   transform transition-transform duration-300 ${
+    isopen ? 'translate-x-0' : ' translate-x-full '
   }`}>
 
 <div className=' top-0 left-0 sticky p-3 rounded-xl dark:text-customdark w-full flex items-center justify-between z-50 bg-gray-100 mb-1'>
@@ -15,8 +15,14 @@ return  (
 <IoIosCloseCircle className='text-2xl font-bold cursor-pointer'  onClick={()=>setisopen(false)}/>
 </div>
 
-<div className='flex flex-col gap-2 overflow-y-auto  p-2 '>
+
+
+<div className='flex flex-col gap-2 overflow-y-auto  p-2 flex-grow mb-4 md:mb-0'>
     
+<CartCard/>
+<CartCard/>
+<CartCard/>
+<CartCard/>
 <CartCard/>
 <CartCard/>
 <CartCard/>
@@ -29,7 +35,7 @@ return  (
 
 <div className='left-0  sticky z-50 rounded-xl mt-1 bg-gray-100  bottom-0 flex items-start p-2 flex-col gap-2'>
 <h1 className='font-bold text-sm dark:text-customdark'>Total Cart Amount: Rs.4509</h1>
-<Button className='px-8 bg-customdark hover:bg-customdark rounded-xl text-gray-200 text-lg font-bold'>Checkout</Button>
+<Button className='px-8 mb-3 bg-customdark hover:bg-customdark rounded-xl text-gray-200 text-lg font-bold'>Checkout</Button>
 </div>
 
 </div>

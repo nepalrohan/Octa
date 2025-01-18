@@ -5,7 +5,8 @@ import Navbar from './Navbar'
 import { usePathname } from 'next/navigation'
 
 const blacklist =[
-  "/dashboard"
+  "/dashboard",
+  "/signup"
 ]
 
 const MainLayout = ({children}:{children:React.ReactNode}) => {
@@ -15,15 +16,17 @@ const MainLayout = ({children}:{children:React.ReactNode}) => {
   console.log(result);
 
   return (
-    <div className='flex flex-col h-screen relative'>
+    <div className='flex flex-col h-screen relative '>
       {
         result ?  null :
        <Navbar/>
       }
  
 
-
+<section className=''>
         {children}
+
+</section>
        <TabBar/>
 
     </div>

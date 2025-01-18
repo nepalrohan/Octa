@@ -10,10 +10,10 @@ const page = ()=>{
     return (
 
 
-<div className =' flex flex-col w-full mt-6 md:mt-8 '>
+<div className =' flex flex-col w-full mt-14 md:mt-16 '>
 
-    <div className='flex md:flex-row flex-col w-full md:w-2/3 mx-auto p-3 md:p-0 items-center justify-center mb-8'>
-<div className='flex  w-full md:w-[350px] justify-center items-center p-2 md:p-0  md:flex-col gap-2  bg-gray-200 h-full'>
+    <div className='flex md:flex-row flex-col   w-full md:w-2/3 mx-auto p-3 md:p-2 items-center md:items-stretch justify-center md:mt-4   mb-8'>
+<div className='flex  w-full md:w-[350px] justify-center items-center p-2 md:p-0  md:flex-col gap-2  bg-gray-200 '>
 
 <div className='flex items-center justify-center mt-1'>
 <Image 
