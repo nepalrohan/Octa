@@ -6,7 +6,7 @@ import CartDropDown from  "@/components/CartDropDown"
 import { HomeIcon, ShoppingBagIcon, } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Signup from "@/components/Signup"
+import Signin from "@/components/Signup"
 
 
 const login = false;
@@ -23,7 +23,7 @@ const pathname = usePathname()
     login ?
 <UserDropDown/>
 :
-<Signup/>
+<Signin/>
 }
 <CartDropDown/>
 <ThemeChanger/>

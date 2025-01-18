@@ -7,8 +7,8 @@ import CartDropDown from "./CartDropDown";
 import UserDropDown from "./UserDropDown";
 import {ThemeChanger} from "./ThemeChanger";
 import Menu from "./Menu";
-import Signup from "@/components/Signup"
-const login= true;
+import Signin from "@/components/Signup"
+const login= false;
 
 const Navbar = () => {
 
@@ -34,7 +34,7 @@ login ?
 
         <UserDropDown />
 :
-<Signup/>
+<Signin/>
 }
         <CartDropDown />
 

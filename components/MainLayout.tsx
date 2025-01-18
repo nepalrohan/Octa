@@ -6,7 +6,8 @@ import { usePathname } from 'next/navigation'
 
 const blacklist =[
   "/dashboard",
-  "/signup"
+  "/signup",
+  "/signin"
 ]
 
 const MainLayout = ({children}:{children:React.ReactNode}) => {
@@ -27,7 +28,12 @@ const MainLayout = ({children}:{children:React.ReactNode}) => {
         {children}
 
 </section>
+{
+  result ? null:
+
+
        <TabBar/>
+}
 
     </div>
   )
