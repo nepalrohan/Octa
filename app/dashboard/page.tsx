@@ -1,33 +1,24 @@
-import {SideBar} from "@/components/SideBar"
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-export default function page({ children }: { children: React.ReactNode }){
 
 
-    return (
-<SidebarProvider>
+export default function page(){
+  return(
 
+    <div className='grid grid-cols-12 gap-2'>
 
-<div className='grid-cols-12'>
-<div className='col-span-4'>
+<div className='col-span-2'>
 
-<SideBar />
-      <main>
-        <SidebarTrigger />
-        {children}
-      </main>
-</div>
-
-<div className='col-span-8'>
-
+  {/* <SideBar/> */}
 </div>
 
 
-        </div>
-     
-    </SidebarProvider>
-        
-    )
+
+<div className="col-span-10 ">
+
+
+
+
+
+</div>
+    </div>
+  )
 }
-
-
-

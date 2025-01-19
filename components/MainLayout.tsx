@@ -7,7 +7,17 @@ import { usePathname } from 'next/navigation'
 const blacklist =[
   "/dashboard",
   "/signup",
-  "/signin"
+  "/signin",
+  "/dashboard/mypurchase", // User-specific routes
+  "/dashboard/mycart",
+  "/dashboard/pendingorder",
+  "/dashboard/cancelled",
+  "/dashboard/orders", // Admin-specific routes
+  "/dashboard/user",
+  "/dashboard/products",
+  "/dashboard/addproduct",
+
+
 ]
 
 const MainLayout = ({children}:{children:React.ReactNode}) => {
