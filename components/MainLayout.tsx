@@ -20,6 +20,7 @@ const blacklist =[
 
 ]
 
+
 const MainLayout = ({children}:{children:React.ReactNode}) => {
   const pathname = usePathname();
 

@@ -14,7 +14,7 @@ const Filter = () =>{
 
 
 
-        <div className=' flex w-full  h-[70vh] md:h-[88vh] overflow-hidden sticky left-0 top-0 dark:md:bg-customdark  flex-col items-center justify-center  md:dark:border-r-2 md:dark:border-gray-500  p-1 '>
+        <div className=' flex w-full  h-[70vh] md:h-[88vh] overflow-hidden sticky left-0 top-0 dark:md:bg-customdark  flex-col items-center justify-center    p-1 '>
 <div className='flex flex-col items-center z-30 md:z-0 justify-center h-fit py-3 gap-4  md:gap-7 md:dark:bg-customdark dark:bg-gray-200  bg-gray-200  md:bg-transparent rounded-r-full  md:rounded-r-none p-2 '>
 <div className='flex flex-col gap-5 md:gap-2 '>
 <h1 className='font-extrabold text-sm text-customdark text-center dark:text-gray-200 border-b-2 border-gray-500 hidden md:block'>Filter By Category</h1>
