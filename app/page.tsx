@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className='mt-2' >
+    <div className='mt-16' >
       <HomePage/>
       <MostPopular/>
       <RecentProducts/>
