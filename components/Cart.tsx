@@ -1,9 +1,10 @@
 import Image from "next/image"
+import { Dispatch, SetStateAction } from "react";
 import headphone from "@/public/headphone.jpg"
 import {Button} from "@/components/ui/button"
 import {IoIosCloseCircle} from "react-icons/io"
 import {MdDelete} from "react-icons/md"
-export function Cart({isopen, setisopen}:{isopen:boolean, setisopen:(x:boolean)=>boolean}) {
+export function Cart({isopen, setisopen}:{isopen:boolean, setisopen:Dispatch<SetStateAction<boolean>> }) {
   
 return  (
 <div   className={`max-h-screen h-screen w-80 bg-customdark  z-50 right-0   top-0 fixed p-4  flex flex-col  gap-5   transform transition-transform duration-300 ${
